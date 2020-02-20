@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-2 custom-title" href="#">
+            {{site.title}}
+          </a>
+          <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-warning has-text-black is-bold" href={{site.github_repo}} target="_blank">
+                  <strong>GitHub</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-warning is-bold">
+      <div class="hero-body">
+        <div class="container is-overlay">
+          <div class="tile is-ancestor ">
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-light">
+                <p class="title has-text-dark is-size-3">Trending</p>
+                <div class="top"></div>
+                <div class="columns is-multiline is-mobile is-centered" id="entry">
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Developed</strong> by <a href="https://github.com/thypirate" target="_blank">Thypirate</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/the-movies-vanilla.js"></script>
+  </body>
+</html>
